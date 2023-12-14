@@ -3,7 +3,7 @@ import logging
 import os
 
 import openai
-from openai import RateLimitError
+from openai.error import RateLimitError
 
 import gpt_review.constants as C
 from gpt_review.context import _load_azure_openai_context
