@@ -47,7 +47,7 @@ runs:
         run: |
           source .env/bin/activate
 
-          gpt github review \
+          python ${{ github.action_path }}/src/gpt github review \
             --access-token $GITHUB_TOKEN \
             --pull-request $PATCH_PR \
             --repository $PATCH_REPO
