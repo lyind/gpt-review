@@ -40,7 +40,7 @@ runs:
           python3 -m venv .env
           source .env/bin/activate
           python -m pip install --upgrade pip
-          python -m pip install gpt-review
+          python -m pip install ${{ github.action_path }}
 
       - name: Review PR and make comment
         shell: bash

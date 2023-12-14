@@ -30,7 +30,7 @@ dependencies = [
   'httpx',
   'GitPython',
   'knack',
-  'openai',
+  'openai<=0.28.1',
   'requests',
   'pyyaml',
   'typing_extensions; python_version <= "3.10"',
